@@ -68,3 +68,25 @@ Automates the build, test, and deployment process:
 This ensures every change in the codebase is automatically tested and deployed.
 
 
+#### Run the project
+1. Initialize Terraform:
+
+```sh
+cd terraform
+terraform init
+terraform apply
+
+```
+
+2. Deploy Flask App:
+
+```sh
+cd flask-app/helm
+helm install flask-app .
+```
+
+3. Access the App:
+Use the DNS provided by ExternalDNS and verify through Ingress (flask-app.example.com).
+
+
+
