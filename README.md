@@ -88,5 +88,11 @@ helm install flask-app .
 3. Access the App:
 Use the DNS provided by ExternalDNS and verify through Ingress (flask-app.example.com).
 
+```sh
+mkdir flask-app && cd flask-app
+python3 -m venv venv
+source venv/bin/activate
+pip install flask
+```
 
 
